@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+body {
+  background: #ff4136;
+}
+
+.App {
+  font-family: "Fugaz One", cursive;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.Main {
+  /*background: #ffd2f1;*/
+}

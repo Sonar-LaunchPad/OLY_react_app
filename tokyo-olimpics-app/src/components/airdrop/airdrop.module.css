@@ -1,0 +1,106 @@
+.Airdrop {
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+.LogoImage {
+  width: 15rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+.Title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 1px 1px #ff4136;
+}
+.Description {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #666;
+  padding-bottom: 0.5rem;
+}
+.Amount {
+  font-size: 3rem;
+}
+
+.AirdropButton {
+  padding: 0.75rem 2.5rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 3px 3px #ff4136;
+  cursor: pointer;
+  transition: 0.1s;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  gap: 1.5rem;
+}
+
+.AirdropButton:disabled {
+  background: #333;
+  transform: scale(0.96);
+  box-shadow: 1px 1px #ff4136;
+  cursor: not-allowed;
+}
+.AirdropButton svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.AirdropButton:hover {
+  transform: scale(0.96);
+  box-shadow: 1px 1px #ff4136;
+}
+.Feedback {
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+.Feedback > span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.Info {
+  color: #666;
+}
+.Fail {
+  color: #ff4136;
+}
+.Success {
+  color: #111;
+}
+.Spinner {
+  animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  padding: 3rem 4rem;
+  padding-bottom: 1.5rem;
+  background: #fafafa;
+  border-radius: 2rem;
+  box-shadow: 4px 4px #ff4136;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+}

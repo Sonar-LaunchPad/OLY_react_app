@@ -1,0 +1,157 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background: #ff4036c9;
+  padding: 0rem 2rem;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+.FirstLi {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+.LogoImage {
+  width: 4rem;
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+.Name {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px #ff4136;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+}
+.Ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.Ul li {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #000;
+  text-shadow: 0.5px 0.5px #fff;
+
+  transition: 0.1s;
+}
+
+.Ul li:hover {
+  transform: scale(0.96);
+
+  cursor: pointer;
+}
+
+.Wallet {
+  display: flex;
+}
+
+.WalletConnect {
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-family: inherit;
+
+  box-shadow: 3px 3px #000;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.Airdrop {
+  padding: 0.65rem 1.25rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 3px 3px #000;
+  cursor: pointer;
+  transition: 0.1s;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  gap: 1rem;
+}
+.Airdrop svg {
+  width: 2rem;
+  height: 2rem;
+  margin-top: -0.25rem;
+}
+.Airdrop:hover {
+  box-shadow: 2px 2px #000;
+}
+.WalletConnect:hover {
+  transform: scale(0.96);
+  box-shadow: 2px 2px #000;
+}
+
+.Connected,
+.Disconnected {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.Address {
+  font-size: 1.25rem;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+.Balance {
+  font-size: 0.9rem;
+  color: #fafafa;
+  text-shadow: 1px 1px #000;
+}
+.AirdropButton {
+  padding: 0.65rem 1.25rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 3px 3px #ff4136;
+  cursor: pointer;
+  transition: 0.1s;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  gap: 1.5rem;
+  box-shadow: 1px 1px #fff;
+}
+
+.AirdropButton svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}

@@ -1,0 +1,187 @@
+.Vote {
+  width: 100vw;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+.Title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 1px 1px #ff4136;
+  padding-bottom: 2rem;
+}
+.Buttons {
+  margin-top: 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.VotesAndRemove {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ff4136;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+a:hover {
+  color: #c9322a;
+}
+
+a svg {
+  font-size: 1.25rem;
+  margin-top: -0.25rem;
+}
+
+.BitTitle {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+.Description {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #666;
+}
+
+.Body {
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  transition: 0.1s;
+  background-color: #eee;
+  color: #000;
+}
+.Votes {
+  text-transform: uppercase;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 4rem;
+  background: #fafafa;
+  border-radius: 2rem;
+  box-shadow: 4px 4px #ff4136;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+}
+
+.TextArea {
+  min-height: 5rem;
+  font-family: inherit;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: none;
+  resize: none;
+  transition: 0.1s;
+  background-color: #eee;
+}
+
+.TextArea:focus {
+  background-color: #efefef;
+}
+
+.CreateButton {
+  padding: 0.75rem 2.5rem;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 3px 3px #ff4136;
+  cursor: pointer;
+  transition: 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  gap: 1.5rem;
+}
+
+.CreateButton:disabled {
+  background: #333;
+  transform: scale(0.96);
+  box-shadow: 1px 1px #ff4136;
+  cursor: not-allowed;
+}
+.CreateButton svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.CreateButton:hover {
+  transform: scale(0.96);
+  box-shadow: 1px 1px #ff4136;
+}
+
+.Feedback {
+  padding-top: 1rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+.Feedback > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.Info {
+  color: #666;
+}
+.Fail {
+  color: #ff4136;
+}
+.Success {
+  color: #111;
+}
+.Spinner {
+  animation: rotating 2s linear infinite;
+}
+
+.BigSpinner {
+  animation: rotating 2s linear infinite;
+  color: #fff;
+  width: 5rem;
+  height: 5rem;
+}
+
+.Price {
+  text-transform: uppercase;
+  color: #666;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
